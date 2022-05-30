@@ -1,0 +1,3 @@
+S [Start states]
+R [Rules - each rule is formatted "[start][symbol][end]", with each rule ending in ',']
+E [End (Terminal) states]
