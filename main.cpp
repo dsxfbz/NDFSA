@@ -49,6 +49,33 @@ int main(int argc, char **argv)
 	else {
 		std::cout<<"  Doesn't match.\n";
 	}
+	
+	curr_word = "goodbye.";
+	std::cout<<"Processing \""<<curr_word<<"\"\n";
+	if (automata.process(curr_word)) {
+		std::cout<<"  Matches!\n";
+	}
+	else {
+		std::cout<<"  Doesn't match.\n";
+	}
+	
+	curr_word = "Goodbye.";
+	std::cout<<"Processing \""<<curr_word<<"\"\n";
+	if (automata.process(curr_word)) {
+		std::cout<<"  Matches!\n";
+	}
+	else {
+		std::cout<<"  Doesn't match.\n";
+	}
+	
+	curr_word = "hell";
+	std::cout<<"Processing \""<<curr_word<<"\"\n";
+	if (automata.process(curr_word)) {
+		std::cout<<"  Matches!\n";
+	}
+	else {
+		std::cout<<"  Doesn't match.\n";
+	}
 	return 0;
 }
 
